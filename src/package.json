@@ -1,0 +1,26 @@
+{
+  "name": "mc-angular-ui",
+  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/msceastside/mc-angular-ui.git"
+  },
+  "author": {
+    "name": "Michael Carpenter",
+    "email": "msc.eastside@gmail.com"
+  },
+  "keywords": [
+    "angular"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/msceastside/mc-angular-ui.git/issues"
+  },
+  "module": "mc-angular-ui.js",
+  "typings": "mc-angular-ui.d.ts",
+  "peerDependencies": {
+    "@angular/core": "^4.0.0",
+    "rxjs": "^5.1.0",
+    "zone.js": "^0.8.4"
+  }
+}
