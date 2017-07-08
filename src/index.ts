@@ -10,6 +10,8 @@ export * from './sample.directive';
 export * from './sample.pipe';
 export * from './sample.service';
 
+export * from './user-card.model';
+
 @NgModule({
   imports: [
     CommonModule
