@@ -360,7 +360,10 @@
 
             <tr>
                 <td class="col-md-3">template</td>
-                <td class="col-md-9"><pre class="line-numbers"><code class="language-html">&lt;h1&gt;Sample component&lt;/h1&gt;</code></pre></td>
+                <td class="col-md-9"><pre class="line-numbers"><code class="language-html">&lt;h1&gt;Sample component&lt;/h1&gt;
+&lt;div&gt;{{userCard.title1}}&lt;/div&gt;
+&lt;div&gt;{{userCard.title2}}&lt;/div&gt;
+</code></pre></td>
             </tr>
 
 
@@ -369,6 +372,29 @@
     </table>
 </section>
 
+    <section>
+        <h3 id="inputs">Inputs</h3>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-2">
+                            <code>userCard</code>
+                        </td>
+                        <td class="col-md-10">
+                              <p>
+                                <em>Type:</em>    <code><a href="../classes/UserCardModel.html" target="_self" >UserCardModel</a></code>
+
+                              </p>
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="13" class="link-to-prism">src/sample.component.ts:13</a></div>
+                                </td>
+                            </tr>
+                </tbody>
+            </table>
+    </section>
 
 
     <section>
@@ -382,7 +408,7 @@
                     </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="7" class="link-to-prism">src/sample.component.ts:7</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="13" class="link-to-prism">src/sample.component.ts:13</a></div>
                                 </td>
                             </tr>
     
@@ -395,13 +421,19 @@
 
 
     <div class="tab-pane fade tab-source-code" id="source">
-        <pre class="line-numbers"><code class="language-typescript">import { Component } from &#x27;@angular/core&#x27;;
+        <pre class="line-numbers"><code class="language-typescript">import { Component, Input } from &#x27;@angular/core&#x27;;
+import { UserCardModel } from &#x27;./user-card.model&#x27;;
 
 @Component({
   selector: &#x27;sample-component&#x27;,
-  template: &#x60;&lt;h1&gt;Sample component&lt;/h1&gt;&#x60;
+  template: &#x60;
+  &lt;h1&gt;Sample component&lt;/h1&gt;
+  &lt;div&gt;{{userCard.title1}}&lt;/div&gt;
+  &lt;div&gt;{{userCard.title2}}&lt;/div&gt;
+  &#x60;
 })
 export class SampleComponent {
+  @Input() userCard: UserCardModel;
 
   constructor() {
   }
@@ -434,7 +466,7 @@ export class SampleComponent {
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><h1>Sample component</h1></div>'
+        var COMPONENT_TEMPLATE = '<div><h1>Sample component</h1><div>{{userCard.title1}}</div><div>{{userCard.title2}}</div></div>'
     var COMPONENTS = [{'name': 'SampleComponent', 'selector': 'sample-component'}];
     var DIRECTIVES = [{'name': 'SampleDirective', 'selector': '[sampleDirective]'}];
     var ACTUAL_COMPONENT = {'name': 'SampleComponent'};
