@@ -10,7 +10,7 @@ import { UserCardModel } from './user-card.model';
   `
 })
 export class SampleComponent {
-  @Input() userCard: UserCardModel;
+  @Input('userCard') userCard: UserCardModel;
 
   constructor() {
   }

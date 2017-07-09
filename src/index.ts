@@ -4,6 +4,7 @@ import { SampleComponent } from './sample.component';
 import { SampleDirective } from './sample.directive';
 import { SamplePipe } from './sample.pipe';
 import { SampleService } from './sample.service';
+import { UserCardModel } from './user-card.model';
 
 export * from './sample.component';
 export * from './sample.directive';
